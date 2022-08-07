@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogin.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="main-layout">
+    <header class="main-header main-layout full">
+        <div class="flex">
+            <h1 class="pointer logo ">Blogin<span class="logo-dot">.</span></h1>
+            <div onclick="onToggleOptions()" class="flex header-opts">
+                <div class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+                <ul class="nav-menu clean-list flex">
+                    <li><a href="">Journal</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Work</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+        </div>
+    </header>
+
+    <main class="main-container main-layout flex">
+        <section class="flex">
+            <img src="/img/001.jpg">
+            <div class="flex card">
+                <h2>Duis aute irure dolor in henderit in voluptate.</h2>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commo doconsequat, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                    <br>
+                    <br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <button>Continue reading</button>
+            </div>
+        </section>
+
+        <section class="flex">
+            <img src="/img/002.jpg">
+            <div class="flex card">
+                <h2>Duis aute irure dolor in
+                    henderit in voluptate.</h2>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commo doconsequat, sunt in
+                    <br>culpa qui officia deserunt mollit anim id est laborum.
+                    <br>
+                    <br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <button>Continue reading</button>
+            </div>
+        </section>
+
+        <section class="flex">
+            <img src="/img/003.jpg">
+            <div class="flex card">
+                <h2>Duis aute irure dolor in
+                    henderit in voluptate.</h2>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commo doconsequat, sunt in
+                    <br>culpa qui officia deserunt mollit anim id est laborum.
+                    <br>
+                    <br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <button>Continue reading</button>
+            </div>
+        </section>
+
+        <div class="page-btns flex">
+            <button> <span>←</span> Previous</button>
+            <button>Next <span>→</span></button>
+        </div>
+    </main>
+
+    <footer class="main-footer main-layout full">
+        <div class="flex">
+            <h3 class="pointer">Blogin<span class="logo-dot">.</span></h3>
+            <small>© 2014 Blogin.com - All Rights Reserved - Find more free Templates at
+                <span>Pixelhint.com</span></small>
+            <div>
+                <ul class="clean-list flex">
+                    <li class="flex pointer facebook"><a href="#" class="fa fa-facebook"></a></li>
+                    <li class="flex pointer twitter"><a href="#" class="fa fa-twitter"></a></li>
+                    <li class="flex pointer behance"><a href="#" class="fa fa-behance"></a></li>
+                    <li class="flex pointer dribbble"><a href="#" class="fa fa-dribbble"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
+
+    <script>
+        function onToggleOptions(){
+            var elBtn = document.querySelector('.main-header ul')
+            elBtn.classList.toggle('toggle-opts')
+        }
+    </script>
+</body>
+
+</html>
